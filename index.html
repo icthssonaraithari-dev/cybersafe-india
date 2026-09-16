@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSafe India | Govt +2 High School Sonaraithari</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f7;
+            color: #333;
+        }
+        /* Navigation Hover Effect */
+        nav a:hover {
+            color: #f39c12 !important;
+        }
+        /* Feature Box Hover Effect */
+        .feature-box {
+            transition: transform 0.3s ease;
+        }
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. UNIVERSAL NAVIGATION BAR -->
+    <nav style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; background-color: #2c3e50; padding: 15px 30px; color: white;">
+        <div style="font-size: 20px;">
+            <strong>🛡️ CyberSafe India</strong>
+        </div>
+        <div style="margin: 10px 0;">
+            <a href="index.html" style="color: white; margin-right: 20px; text-decoration: none; font-weight: bold;">Home</a>
+            <a href="basics.html" style="color: white; margin-right: 20px; text-decoration: none;">Cyber Basics</a>
+            <a href="fraud.html" style="color: white; margin-right: 20px; text-decoration: none;">Financial Fraud</a>
+            <a href="cases.html" style="color: white; margin-right: 20px; text-decoration: none;">Case Studies</a>
+            <a href="skills.html" style="color: white; margin-right: 20px; text-decoration: none;">Student Skills</a>
+        </div>
+        <div>
+            <button onclick="toggleLanguage()" id="langBtn" style="cursor: pointer; background-color: #f39c12; color: white; border: none; padding: 8px 15px; border-radius: 4px; font-weight: bold;">
+                हिंदी में पढ़ें (Hindi)
+            </button>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <div style="text-align: center; padding: 60px 20px; background-color: #ffffff; border-bottom: 1px solid #ddd;">
+        <div id="welcome-en">
+            <h1 style="color: #2c3e50; font-size: 40px; margin-bottom: 10px;">Welcome to CyberSafe India</h1>
+            <p style="font-size: 18px; max-width: 700px; margin: auto; color: #555;">
+                Your ultimate guide to staying safe in the digital world. Learn how to identify cyber threats, protect your hard-earned money from financial fraud, and explore our students' digital skills.
+            </p>
+        </div>
+        <div id="welcome-hi" style="display: none;">
+            <h1 style="color: #2c3e50; font-size: 40px; margin-bottom: 10px;">साइबर सुरक्षित भारत में आपका स्वागत है</h1>
+            <p style="font-size: 18px; max-width: 700px; margin: auto; color: #555;">
+                डिजिटल दुनिया में सुरक्षित रहने के लिए आपका बेहतरीन गाइड। जानें कि साइबर खतरों की पहचान कैसे करें, वित्तीय धोखाधड़ी से अपनी मेहनत की कमाई की रक्षा कैसे करें।
+            </p>
+        </div>
+    </div>
+
+    <!-- 3. LEADERSHIP & TRAINERS SECTION -->
+    <div style="max-width: 1200px; margin: 50px auto; padding: 0 20px;">
+        
+        <!-- School Header -->
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h2 id="school-title-en" style="color: #2c3e50; font-size: 32px; margin-bottom: 5px;">Government Plus 2 High School Sonaraithari</h2>
+            <h2 id="school-title-hi" style="display: none; color: #2c3e50; font-size: 32px; margin-bottom: 5px;">गवर्नमेंट प्लस 2 हाई स्कूल सोनारायठाढ़ी</h2>
+            <div style="height: 4px; width: 100px; background-color: #f39c12; margin: 0 auto;"></div>
+        </div>
+
+        <!-- Principal's Card -->
+        <div style="background-color: #ffffff; border-left: 6px solid #8e44ad; padding: 30px; border-radius: 8px; display: flex; flex-wrap: wrap; align-items: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <div style="width: 120px; height: 120px; background-color: #ecf0f1; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 30px; margin-bottom: 15px; flex-shrink: 0;">
+                <span style="color: #95a5a6; font-size: 40px;">👨‍🏫</span>
+                <!-- STUDENT TASK: Replace with Principal's Photo -->
+            </div>
+            <div style="flex: 1; min-width: 250px;">
+                <h2 style="margin: 0; color: #2c3e50; font-size: 28px;">Sanjay Kumar Kushwaha</h2>
+                <h3 id="prin-role-en" style="margin: 5px 0 15px 0; color: #8e44ad;">Principal</h3>
+                <h3 id="prin-role-hi" style="display: none; margin: 5px 0 15px 0; color: #8e44ad;">प्राचार्य</h3>
+                
+                <!-- Colorful Placeholder for Principal's Message -->
+                <div style="background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%); border: 2px dashed #2c3e50; border-radius: 8px; padding: 20px; text-align: center;">
+                    <p id="prin-msg-en" style="color: #2c3e50; font-style: italic; font-weight: bold; margin: 0; font-size: 16px;">
+                        📝 [ Dear Students,
+
+As we approach our upcoming Skill Competition, I want to take a moment to remind you that true education extends far beyond textbooks and classrooms. Skills are the practical wings that allow you to soar towards success in your respective fields.
+
+This competition is a wonderful platform for you to showcase your creativity, innovation, problem-solving abilities, and teamwork. Whether it is technology, arts, crafts, or any other vocational skill, this is your moment to shine.
+
+Remember, the goal of this event is not merely to win, but to learn, participate, and discover your hidden talents. I encourage each of you to embrace this opportunity, give your absolute best, and most importantly, have fun!
+
+Wishing you all the very best! ]
+                    </p>
+                    <p id="prin-msg-hi" style="display: none; color: #2c3e50; font-style: italic; font-weight: bold; margin: 0; font-size: 16px;">
+                        📝 [ विषय: प्रधानाचार्य का संदेश – आगामी कौशल प्रतियोगिता (Skill Competition)
+
+प्रिय छात्रों, शिक्षकों और अभिभावकों,
+
+आज की तेजी से बदलती दुनिया में, किताबी ज्ञान के साथ-साथ व्यावहारिक कौशल (practical skills) भी उतना ही महत्वपूर्ण है। यह प्रतियोगिता आपके उन कौशल को निखारने का सुअवसर है।
+
+यह कार्यक्रम हमारे छात्रों के लिए पारंपरिक कक्षा से बाहर निकलकर अपनी अनूठी प्रतिभाओं को प्रदर्शित करने का मंच है।
+
+शिक्षा का अर्थ केवल अंक प्राप्त करना नहीं है, बल्कि वास्तविक दुनिया की चुनौतियों का सामना करने की क्षमता विकसित करना है।
+
+मुझे आपके शानदार विचारों और रचनात्मक परियोजनाओं (projects) को देखने का बेसब्री से इंतजार है।
+
+आप सभी को हार्दिक शुभकामनाएँ!
+
+शुभकामनाओं सहित, ]
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocational Trainers Grid -->
+        <div style="text-align: center; margin-bottom: 25px;">
+            <h3 id="trainers-title-en" style="color: #7f8c8d; font-size: 22px;">Our Vocational Training Team</h3>
+            <h3 id="trainers-title-hi" style="display: none; color: #7f8c8d; font-size: 22px;">हमारी व्यावसायिक प्रशिक्षण टीम</h3>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+           <!-- Vinit Kumar -->
+    <div style="border: 1px solid #ddd; border-radius: 8px; width: 220px; text-align: center; padding: 20px; background-color: white; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+        
+        <img src="vineet.jpg" alt="Vinit Kumar - ITES Trainer" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; object-position: top; margin: 0 auto 15px; display: block;">
+        <h3 style="color: #2980b9; margin-bottom: 5px; font-size: 18px;">Vinit Kumar</h3>
+        <p id="t1-role-en" style="color: #555; font-size: 14px; margin: 0; font-weight: bold;">ITES Trainer</p>
+        <p id="t1-role-hi" style="display: none; color: #555; font-size: 14px; margin: 0; font-weight: bold;">ITES प्रशिक्षक</p>
+        
+    </div>
+    
+            <!-- Arun Kumar -->
+            <div style="border: 1px solid #ddd; border-radius: 8px; width: 220px; text-align: center; padding: 20px; background-color: white; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+                <img src="Pradeep.jpg" alt="Pradeep Kumar" style="width: 80px; height: 80px; border-radius: 50%; object-fit: contain; background-color: #ecf0f1; margin: 0 auto 15px; display: block;">
+                <h3 style="color: #2980b9; margin-bottom: 5px; font-size: 18px;">Arun Kumar</h3>
+                <p id="t2-role-en" style="color: #555; font-size: 14px; margin: 0; font-weight: bold;">Apparel Trade Trainer</p>
+                <p id="t2-role-hi" style="display: none; color: #555; font-size: 14px; margin: 0; font-weight: bold;">परिधान (Apparel) प्रशिक्षक</p>
+            </div>
+            <!-- Suman Kumar Yadav -->
+            <div style="border: 1px solid #ddd; border-radius: 8px; width: 220px; text-align: center; padding: 20px; background-color: white; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+                <img src="Suman.jpg" alt="Suman Kumar Yadav" style="width: 80px; height: 80px; border-radius: 50%; object-fit: contain; background-color: #ecf0f1; margin: 0 auto 15px; display: block;">
+                <h3 style="color: #2980b9; margin-bottom: 5px; font-size: 18px;">Suman Kumar Yadav</h3>
+                <p id="t3-role-en" style="color: #555; font-size: 14px; margin: 0; font-weight: bold;">Electronic and Hardware</p>
+                <p id="t3-role-hi" style="display: none; color: #555; font-size: 14px; margin: 0; font-weight: bold;">इलेक्ट्रॉनिक्स और हार्डवेयर</p>
+            </div>
+            <!-- Pradeep Kumar -->
+                <div style="border: 1px solid #ddd; border-radius: 8px; width: 220px; text-align: center; padding: 20px; background-color: white; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+
+             <img src="Pradeep.jpg" alt="Pradeep Kumar" style="width: 80px; height: 80px; border-radius: 50%; object-fit: contain; background-color: #ecf0f1; margin: 0 auto 15px; display: block;">
+                <h3 style="color: #2980b9; margin-bottom: 5px; font-size: 18px;">Pradeep Kumar</h3>
+                <p id="t4-role-en" style="color: #555; font-size: 14px; margin: 0; font-weight: bold;">Media & Entertainment</p>
+                <p id="t4-role-hi" style="display: none; color: #555; font-size: 14px; margin: 0; font-weight: bold;">मीडिया और मनोरंजन</p>         
+    </div>
+
+    <!-- 4. EXPLORE WEBSITE GRID (Links to other pages) -->
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 40px 20px; max-width: 1200px; margin: auto;">
+
+        <!-- Cyber Basics -->
+        <div class="feature-box" style="background-color: white; border-top: 5px solid #3498db; padding: 30px; width: 250px; text-align: center; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <h2 id="box1-title-en" style="font-size: 20px;">🛡️ Cyber Basics</h2>
+            <h2 id="box1-title-hi" style="display: none; font-size: 20px;">🛡️ साइबर मूल बातें</h2>
+            <p id="box1-desc-en" style="color: #666; font-size: 15px;">Understand passwords, malware, and data protection.</p>
+            <p id="box1-desc-hi" style="display: none; color: #666; font-size: 15px;">पासवर्ड, मैलवेयर और डेटा सुरक्षा को समझें।</p>
+            <a href="basics.html" style="display: inline-block; background-color: #3498db; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; margin-top: 10px;">Read More</a>
+        </div>
+
+        <!-- Financial Fraud -->
+        <div class="feature-box" style="background-color: white; border-top: 5px solid #e74c3c; padding: 30px; width: 250px; text-align: center; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <h2 id="box2-title-en" style="font-size: 20px;">💸 Fraud Prevention</h2>
+            <h2 id="box2-title-hi" style="display: none; font-size: 20px;">💸 धोखाधड़ी से बचाव</h2>
+            <p id="box2-desc-en" style="color: #666; font-size: 15px;">Learn the tricks scammers use for UPI and OTP phone scams.</p>
+            <p id="box2-desc-hi" style="display: none; color: #666; font-size: 15px;">UPI और OTP स्कैम के लिए इस्तेमाल की जाने वाली तरकीबें जानें।</p>
+            <a href="fraud.html" style="display: inline-block; background-color: #e74c3c; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; margin-top: 10px;">Protect Yourself</a>
+        </div>
+
+        <!-- Skill Showcase -->
+        <div class="feature-box" style="background-color: white; border-top: 5px solid #2ecc71; padding: 30px; width: 250px; text-align: center; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <h2 id="box3-title-en" style="font-size: 20px;">🏆 Skill Showcase</h2>
+            <h2 id="box3-title-hi" style="display: none; font-size: 20px;">🏆 कौशल प्रदर्शन</h2>
+            <p id="box3-desc-en" style="color: #666; font-size: 15px;">Explore projects and videos created by our talented students.</p>
+            <p id="box3-desc-hi" style="display: none; color: #666; font-size: 15px;">छात्रों द्वारा बनाए गए प्रोजेक्ट और वीडियो देखें।</p>
+            <a href="skills.html" style="display: inline-block; background-color: #2ecc71; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; margin-top: 10px;">See Projects</a>
+        </div>
+
+    </div>
+
+    <!-- 5. FOOTER -->
+    <div style="background-color: #2c3e50; color: white; text-align: center; padding: 30px 20px; margin-top: 20px;">
+        <p id="footer-en" style="margin: 0; font-size: 16px;">Proudly created and organized by the students of <strong>Government Plus 2 High School Sonaraithari</strong>.</p>
+        <p id="footer-hi" style="display: none; margin: 0; font-size: 16px;"><strong>गवर्नमेंट प्लस 2 हाई स्कूल सोनारायठाढ़ी</strong> के छात्रों द्वारा गर्व से तैयार और आयोजित।</p>
+    </div>
+
+    <!-- 6. THE JAVASCRIPT (Language Toggle Logic) -->
+    <script>
+        // Check if user previously selected Hindi
+        window.onload = function() {
+            if(localStorage.getItem('preferredLang') === 'hi') {
+                toggleLanguage(true);
+            }
+        };
+
+        function toggleLanguage(forceHindi = false) {
+            var enElements = document.querySelectorAll('[id$="-en"]');
+            var hiElements = document.querySelectorAll('[id$="-hi"]');
+            var btn = document.getElementById("langBtn");
+            
+            // If English is currently showing, switch to Hindi
+            if (document.getElementById("welcome-en").style.display !== "none" || forceHindi) {
+                enElements.forEach(el => el.style.display = "none");
+                hiElements.forEach(el => el.style.display = "block");
+                btn.innerHTML = "Read in English";
+                localStorage.setItem('preferredLang', 'hi'); // Save preference
+            } else {
+                // Switch back to English
+                enElements.forEach(el => el.style.display = "block");
+                hiElements.forEach(el => el.style.display = "none");
+                btn.innerHTML = "हिंदी में पढ़ें (Hindi)";
+                localStorage.setItem('preferredLang', 'en'); // Save preference
+            }
+        }
+    </script>
+
+</body>
+</html>
